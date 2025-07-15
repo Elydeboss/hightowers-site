@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1) nav is now relative -->
+    <nav class="relative flex items-center justify-between p-6 mt-2">
+      <div class="m-auto">
+        <h1
+          class="text-4xl font-bold text-blue-900 sm:hidden md:hidden lg:flex"
+        >
+          high towers
+        </h1>
+      </div>
+
+      <div
+        class="sm:flex items-center justify-between w-full max-w-6xl mx-auto lg:hidden"
+      >
+        <h1 class="text-4xl font-bold text-blue-900 sm:flex md:flex">
+          high towers
+        </h1>
+
+        <!-- Hamburger Icon for Mobile -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-2xl focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <i id="menu-icon" class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex m-auto">
+        <ul class="flex items-center space-x-4">
+          <li><a href="#" class="text-lg text-blue-900">HOME</a></li>
+          <li><a href="#" class="text-lg">ABOUT</a></li>
+          <li><a href="#" class="text-lg">TOUR</a></li>
+          <li><a href="#" class="text-lg">PACKAGE</a></li>
+          <li><a href="#" class="text-lg mr-[100px]">CONTACT</a></li>
+          <button
+            class="bg-white text-blue-300 py-[8px] px-[20px] rounded-full border-2 border-blue-300 hover:bg-blue-300 hover:text-white hover:border-white transition duration-300 ml-[70px]"
+          >
+            BOOK TRIP
+          </button>
+        </ul>
+      </div>
+
+      <!-- Mobile Menu -->
+      <ul
+        id="mobile-menu"
+        class="hidden absolute top-full inset-x-0 z-50 bg-blue-300 flex flex-col items-center py-6 space-y-4 md:hidden"
+      >
+        <li><a href="#" class="text-lg text-blue-900">HOME</a></li>
+        <li><a href="#" class="text-lg text-blue-900">ABOUT</a></li>
+        <li><a href="#" class="text-lg text-blue-900">TOUR</a></li>
+        <li><a href="#" class="text-lg text-blue-900">PACKAGE</a></li>
+        <li><a href="#" class="text-lg text-blue-900">CONTACT</a></li>
+        <li>
+          <button
+            class="bg-blue-300 text-white py-2 px-5 rounded-full hover:bg-blue-400 transition"
+          >
+            BOOK TRIP
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/9be8d37f50.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      const icon = document.getElementById("menu-icon");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        // Swap icon between bars and X
+        if (icon.classList.contains("fa-bars")) {
+          icon.classList.replace("fa-bars", "fa-times");
+        } else {
+          icon.classList.replace("fa-times", "fa-bars");
+        }
+      });
+    </script>
+  </body>
+</html>
