@@ -6,9 +6,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
   </head>
-  <body>
-    <!-- 1) nav is now relative -->
-    <nav class="relative flex items-center justify-between p-6 mt-2">
+  <body class="mx-auto">
+    <!-- nav is now relative -->
+    <nav
+      class="relative flex items-center justify-between p-6 sm:bg-blue-300 md:bg-blue-300 lg:bg-white"
+    >
       <div class="m-auto">
         <h1
           class="text-4xl font-bold text-blue-900 sm:hidden md:hidden lg:flex"
@@ -62,13 +64,47 @@
         <li><a href="#" class="text-lg text-blue-900">CONTACT</a></li>
         <li>
           <button
-            class="bg-blue-300 text-white py-2 px-5 rounded-full hover:bg-blue-400 transition"
+            class="bg-white text-blue-300 py-2 px-5 rounded-full hover:bg-blue-400 transition"
           >
             BOOK TRIP
           </button>
         </li>
       </ul>
     </nav>
+
+    <!--home section-->
+    <section
+      class="bg-[url('img/header-bg.jpg')] h-screen bg-cover bg-center p-16 items-center rounded-3xl relative container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4"
+    >
+      <!--make elements centered-->
+ <div class="space-y-6 px-4 text-center lg:text-left">
+    <p class="uppercase text-sm tracking-wider">Elevate your travel journey</p>
+    <h2 class="text-4xl md:text-5xl font-extrabold">
+      Experience <br />The Magic Of <span class="text-blue-600">Flight!</span>
+    </h2>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+      <a
+        href="#"
+        class="px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
+        >Book A Trip Now</a
+      >
+      <button
+        class="w-12 h-12 rounded-full border-2 border-none flex items-center justify-center bg-white hover:bg-blue-50 transition"
+      >
+        <i class="fa-solid fa-circle-play" style="color: #3584e4;"></i>
+      </button>
+    </div>
+  </div>
+
+        <div class="px-4">
+          <img src="img/header.png" alt="an areoplane flying" />
+        </div>
+      </div>
+    </section>
+
+    <!--about section-->
+    
 
     <script
       src="https://kit.fontawesome.com/9be8d37f50.js"
