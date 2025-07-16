@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
-  <body class="mx-auto">
+  <body class="">
     <!-- nav is now relative -->
     <nav
       class="relative flex items-center justify-between p-6 sm:bg-blue-300 md:bg-blue-300 lg:bg-white"
     >
       <div class="m-auto">
         <h1
-          class="text-4xl font-bold text-blue-900 sm:hidden md:hidden lg:flex"
+          class="text-4xl font-bold font-sans font-bold not-italic text-blue-500 sm:hidden lg:flex"
         >
-          high towers
+          High Towers
         </h1>
       </div>
 
@@ -77,7 +77,7 @@
 
     <!--home section-->
     <section
-      class="bg-[url('img/header-bg.jpg')] h-screen bg-cover bg-center p-16 items-center rounded-3xl relative container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4"
+      class="bg-[url('img/header-bg.jpg')] h-[40rem] w-full bg-cover bg-center p-16 items-center rounded-3xl relative container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4"
     >
       <!--make elements centered-->
  <div class="space-y-6 px-4 text-center lg:text-left">
@@ -108,7 +108,35 @@
 
     <!--about section-->
     <section>
-      <h1>Popular Destinations</h1>
+      <div class="text-center mt-[10rem] mb-[4rem]">
+        <h1 class="text-3xl font-bold">Popular Destinations</h1>
+        <p>Discover the Most Loved Destinations Around the Globe</p>
+      </div>
+
+      <!--cards-->
+      <div class="container ml-[15rem] pt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="img/destination-1.jpg" alt="Destination 1" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Paris</h3>
+            <p class="text-gray-600">The City of Light</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="img/destination-2.jpg" alt="Destination 2" class="w-full h-48 object-cover" />
+          <div class="pt-4">
+            <h3 class="text-xl font-semibold">New York</h3>
+            <p class="text-gray-600">The Big Apple</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="img/destination-3.jpg" alt="Destination 3" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Tokyo</h3>
+            <p class="text-gray-600">The Land of the Rising Sun</p>
+          </div>
+        </div>
+        </div>
     </section>
     
 
