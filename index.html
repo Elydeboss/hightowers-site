@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap" rel="stylesheet">
-       <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body style="font-family: DM Sans, sans-serif;">
@@ -24,7 +24,7 @@
       </div>
 
       <div
-        class="sm:flex items-center justify-between w-full max-w-6xl mx-auto lg:hidden"
+        class="sm:flex items-center justify-between w-full max-w-6xl mx-auto sm:flex lg:hidden"
       >
         <h1 class="text-4xl font-bold text-blue-900 sm:flex md:flex">
           high towers
@@ -81,7 +81,7 @@
       class="bg-[url('img/header-bg.jpg')] h-[40rem] w-full bg-cover bg-center p-16 items-center rounded-3xl relative container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4"
     >
       <!--make elements centered-->
- <div class="space-y-6 px-4 text-center lg:text-left">
+   <div class="space-y-6 px-4 text-center lg:text-left">
     <p class="uppercase text-sm tracking-wider">Elevate your travel journey</p>
     <h2 class="text-4xl md:text-5xl font-extrabold">
       Experience <br />The Magic Of <span class="text-blue-600">Flight!</span>
@@ -168,56 +168,74 @@
   <h1>Journey To The sky Made Simple!</h1>
   <h4>Effortless Planning for Your Next Adventure</h4>
 
-<!--journey cards-->
+<!-- Journey Cards -->
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-[5rem]">
-  <div class="bg-[#f3f4f6] p-6 rounded-lg">
-    <span class="text-2xl text-blue-600"><i class="ri-bookmark-3-line"></i></span>
-    <p class="mt-12">seemless booking process</p>
+  
+  <!-- CARD 1 -->
+  <div class="relative group overflow-hidden rounded-lg">
+    <!-- Base Card -->
+    <div class="bg-[#f3f4f6] p-6 min-h-[200px] rounded-lg z-10 relative">
+      <span class="text-2xl text-blue-600"><i class="ri-bookmark-3-line"></i></span>
+      <p class="mt-12 text-gray-700">Seamless booking process</p>
+    </div>
+
+    <!-- Hover Overlay -->
+    <div class="absolute inset-0 bg-blue-700 text-white p-6 transition-all duration-500 ease-in-out translate-y-full group-hover:translate-y-0 rounded-lg z-20">
+      <span class="text-2xl"><i class="ri-bookmark-3-line"></i></span>
+      <h3 class="mt-4 font-semibold text-lg">Easy reservation, one click away</h3>
+      <p class="mt-2 text-sm">
+        From flights to accommodations to activities and transfers, everything you need is available at your fingertips, making travel planning effortless.
+      </p>
+    </div>
   </div>
 
-  <!--hover styles, hidden by default-->
-  <div class="bg-blue-700 hidden">
-    <span class="text-2xl text-blue-600"><i class="ri-bookmark-3-line"></i></span>
-    <h3>easy reservation, one click away</h3>
-    <p>from Flights to accomdations to activities and transfers, everything you need is available at your fingertips, making travel planning Effortless</p>
+  <!-- CARD 2 -->
+  <div class="relative group overflow-hidden rounded-lg">
+    <!-- Base Card -->
+    <div class="bg-[#f3f4f6] p-6 min-h-[200px] pt-4 rounded-lg z-10 relative">
+      <span class="text-blue-600 text-2xl"><i class="ri-landscape-fill"></i></span>
+      <p class="mt-12 text-gray-700">Explore breathtaking landscapes</p>
+    </div>
+
+    <!-- Hover Overlay -->
+    <div class="absolute inset-0 bg-blue-700 text-white p-6 transition-all duration-500 ease-in-out translate-y-full group-hover:translate-y-0 rounded-lg z-20">
+      <span class="text-2xl"><i class="ri-landscape-fill"></i></span>
+      <h3 class="mt-4 font-semibold text-lg">Immersive travel experiences</h3>
+      <p class="mt-2 text-sm">
+        Discover hidden gems, scenic routes, and guided tours that turn your trip into an unforgettable journey.
+      </p>
+    </div>
   </div>
 
-  <!--second card-->
-    <div class="bg-[#f3f4f6] p-6 pt-4 rounded-lg">
-    <span class="text-blue-600 text-2xl"><i class="ri-landscape-fill"></i></span>
-    <p class="mt-12">seemless booking process</p>
+  <!-- CARD 3 -->
+  <div class="relative group overflow-hidden rounded-lg">
+    <!-- Base Card -->
+    <div class="bg-[#f3f4f6] p-6 min-h-[200px] rounded-lg z-10 relative">
+      <span class="text-2xl text-blue-600"><i class="ri-map-2-line"></i></span>
+      <p class="mt-12 text-gray-700">Navigate your trip with ease</p>
+    </div>
+
+    <!-- Hover Overlay -->
+    <div class="absolute inset-0 bg-blue-700 text-white p-6 transition-all duration-500 ease-in-out translate-y-full group-hover:translate-y-0 rounded-lg z-20">
+      <span class="text-2xl"><i class="ri-map-2-line"></i></span>
+      <h3 class="mt-4 font-semibold text-lg">Smart travel tools</h3>
+      <p class="mt-2 text-sm">
+        Use interactive maps and real-time updates to make your journey smooth, safe, and simple from start to finish.
+      </p>
+    </div>
   </div>
 
-  <!--hover styles, hidden by default-->
-  <div class="bg-blue-700 hidden">
-    <span class="text-2xl text-blue-600"><i class="ri-landscape-fill"></i></span>
-    <h3>easy reservation, one click away</h3>
-    <p>from Flights to accomdations to activities and transfers, everything you need is available at your fingertips, making travel planning Effortless</p>
-  </div>
-
-  <!--third card-->
-    <div class="bg-[#f3f4f6] p-6 rounded-lg">
-    <span class="text-2xl text-blue-600"><i class="ri-map-2-line"></i></span>
-    <p class="mt-12">seemless booking process</p>
-  </div>
-
-  <!--hover styles, hidden by default-->
-  <div class="bg-blue-700 hidden">
-    <span><i class="ri-bookmark-3-line"></i></span>
-    <h3>easy reservation, one click away</h3>
-    <p>from Flights to accomdations to activities and transfers, everything you need is available at your fingertips, making travel planning Effortless</p>
-  </div>
 </div>
+
 </section>
 <!--end of journey section-->
 
 <!--wanderlust section-->
-<section>
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 max-w-6xl mx-auto mt-6">
-      <div>
-    <img src="img/girl-1.jpg" alt="">
+<section class="grid grid-cols-1 lg:grid-cols-2 mr-[10rem] mr-[10rem] mt-6">
+  <div class="">
+    <img src="img/girl-1.jpg" alt="" class="rounded-lg shadow-lg max-h-[500px] ml-[15rem] w-auto" />
   </div>
-  <div>
+  <div class="m-0 p-0 w-auto">
     <h4 class="text-4xl font-bold mt-12 mb-8">UNLEASH WANDERLUST WITH HIGHTOWERS</h4>
     <p class="text-[10px] font-[50] text-gray-400 mt-4 mb-4">
       Embark on a journey like no other with Skywings, where your travel dreams come to life. Our mission is to inspire and facilitate your adventures, whether you seek the vibrant energy of bustling cityscapes, the serene beauty of pristine beaches, or the
@@ -228,8 +246,8 @@
       With Skywings as your ultimate travel companion, exploring the wonders of the world has never been easier. Our insider tips and local insights give you the tools to navigate new places with confidence and excitement. From the moment you start planning
       to the day you return home, we are dedicated to making your travel experience seamless and enriching.
     </p>
-    <div class="bg-[url('/img/header-bg.jpg')] bg-cover bg-center bg-no-repeat rounded-[5px]">
-      <button class="w-full mt-2 mb-2 p-2 font-semibold text-gray-800">
+    <div class="bg-[url('/img/header-bg.jpg')] bg-cover bg-center bg-no-repeat rounded-[5px] cursor-pointer transition-all duration-500 ease-in-out">
+      <button class="w-full mt-2 mb-2 p-2 font-semibold text-gray-800 group-hover:text-white transition-colors duration-300">
         Book A Flight Now
         <span><i class="ri-arrow-right-line"></i></span>
       </button>
@@ -241,7 +259,7 @@
 <!--end of wanderlust section-->
 
 <!--card ratings section-->
-<section>
+<section class="mt-[8rem] mb-[15rem] sm:px-6">
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-12 w-full h-64 ml-[10rem] mr-[10rem] mt-8 mb-12">
     <div class="bg-[#f5f5f4] text-center p-12 rounded-3xl shadow-xl/20">
       <h1 class="text-4xl font-bold ">10+</h1>
@@ -307,7 +325,7 @@
 <!--end of discover section-->
 
 <!--section for clients page-->
-<section class="max-w-6xl mx-auto px-4 py-16">
+<section class="mt-[12rem] mr-[10rem] ml-[10rem] mb-[15rem] px-4 sm:px-6 lg:px-20">
   <h2 class="text-3xl font-bold mr-8s mb-4">Loved By Over Thousand Travelers</h2>
   <p class="mr-8s text-gray-600 mb-10">
     Discover the stories of wanderlust and cherished memories through the eyes of our valued clients.
@@ -316,10 +334,10 @@
   <!-- Swiper main container -->
   <div class="">
     <!-- Wrapper -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 swiper-slide">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
 
       <!-- Slide -->
-      <div class="">
+      <div class="max-w-full">
         <div class="p-[5px] rounded-xl bg-gray-100 hover:bg-blue-500 transition-colors duration-300">
           <div class="p-4 rounded-[calc(1rem-5px)] bg-white">
             <div class="mb-4 text-blue-500 flex justify-center gap-1">
@@ -369,7 +387,7 @@
       </div>
 
       <!-- upcoming slide -->
-      <div class="swiper-slide">
+      <div class="">
         <div class="p-[5px] rounded-xl bg-gray-100 hover:bg-blue-500 transition-colors duration-300">
           <div class="p-4 rounded-[calc(1rem-5px)] bg-white">
             <div class="mb-4 text-blue-500 flex justify-center gap-1">
@@ -379,8 +397,8 @@
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
             </div>
-            <p class="text-gray-800">
-              My recent adventure with Skywings was nothing short of spectacular...
+            <p class="text-gray-800 text-sm whitespace-wrap">
+              Skywings offered a transformative experience for my research into historical landmarks. The unique aerial perspectives provided a new level of appreciation and insight into the sites I studied. I highly recommend their services to fellow historians and cultural enthusiasts.
             </p>
           </div>
           <div class="flex items-center gap-4 p-4">
