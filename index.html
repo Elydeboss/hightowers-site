@@ -8,107 +8,89 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <title>Document</title>
+    <!-- AOS CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <title>High Towers</title>
   </head>
-  <body style="font-family: DM Sans, sans-serif;">
+  <body style="font-family: DM Sans, sans-serif;" class="overflow-x-hidden mr-[2rem] ml-[2rem]">
     <!-- nav is now relative -->
-    <nav
-      class="relative flex items-center justify-between p-6 sm:bg-blue-300 md:bg-blue-300 lg:bg-white"
-    >
-      <div class="m-auto">
-        <h1
-          class="text-4xl font-bold font-sans font-bold not-italic text-blue-500 sm:hidden lg:flex"
-        >
-          High Towers
-        </h1>
-      </div>
+    <nav class="relative flex items-center space-x-34 mx-auto max-w-7xl p-6 bg-white z-10">
+      <!-- Logo -->
+      <div class="flex items-center justify-between w-full md:w-auto">
+        <h1 class="text-4xl font-bold text-blue-500">High Towers</h1>
 
-      <div
-        class="sm:flex items-center justify-between w-full max-w-6xl mx-auto sm:flex lg:hidden"
-      >
-        <h1 class="text-4xl font-bold text-blue-900 sm:flex md:flex">
-          high towers
-        </h1>
-
-        <!-- Hamburger Icon for Mobile -->
-        <button
-          id="menu-btn"
-          class="md:hidden text-2xl focus:outline-none"
-          aria-label="Toggle menu"
-        >
+        <!-- Hamburger Icon (shown on mobile) -->
+        <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
           <i id="menu-icon" class="fas fa-bars"></i>
         </button>
       </div>
 
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex m-auto">
-        <ul class="flex items-center space-x-4">
-          <li><a href="#" class="text-lg text-blue-900">HOME</a></li>
-          <li><a href="#" class="text-lg">ABOUT</a></li>
-          <li><a href="#" class="text-lg">TOUR</a></li>
-          <li><a href="#" class="text-lg">PACKAGE</a></li>
-          <li><a href="#" class="text-lg mr-[100px]">CONTACT</a></li>
-          <button
-            class="bg-white text-blue-300 py-[8px] px-[20px] rounded-full border-2 border-blue-300 hover:bg-blue-300 hover:text-white hover:border-white transition duration-300 ml-[70px]"
-          >
-            BOOK TRIP
-          </button>
-        </ul>
+      <!-- Desktop Nav (hidden on small screens) -->
+      <div class="hidden md:flex items-center space-x-6 ml-16">
+        <a href="#" class="text-lg text-blue-900">HOME</a>
+        <a href="#" class="text-lg">ABOUT</a>
+        <a href="#" class="text-lg">TOUR</a>
+        <a href="#" class="text-lg">PACKAGE</a>
+        <a href="#" class="text-lg">CONTACT</a>
+        <button class="ml-6 bg-white text-blue-500 border-2 border-blue-500 rounded-full px-5 py-2 hover:bg-blue-500 hover:text-white transition">
+          BOOK TRIP
+        </button>
       </div>
 
       <!-- Mobile Menu -->
-      <ul
-        id="mobile-menu"
-        class="hidden absolute top-full inset-x-0 z-50 bg-blue-300 flex flex-col items-center py-6 space-y-4 md:hidden"
-      >
+      <ul id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-blue-300 flex flex-col items-center py-6 space-y-4 md:hidden">
         <li><a href="#" class="text-lg text-blue-900">HOME</a></li>
         <li><a href="#" class="text-lg text-blue-900">ABOUT</a></li>
         <li><a href="#" class="text-lg text-blue-900">TOUR</a></li>
         <li><a href="#" class="text-lg text-blue-900">PACKAGE</a></li>
         <li><a href="#" class="text-lg text-blue-900">CONTACT</a></li>
         <li>
-          <button
-            class="bg-white text-blue-300 py-2 px-5 rounded-full hover:bg-blue-400 transition"
-          >
+          <button class="bg-white text-blue-500 py-2 px-5 rounded-full hover:bg-blue-500 hover:text-white transition">
             BOOK TRIP
           </button>
         </li>
       </ul>
     </nav>
 
-    <!--home section-->
-    <section
-      class="bg-[url('img/header-bg.jpg')] h-[40rem] w-full bg-cover bg-center p-16 items-center rounded-3xl relative container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4"
-    >
-      <!--make elements centered-->
-   <div class="space-y-6 px-4 text-center lg:text-left">
+
+<!-- Home Section -->
+<section
+  class="h-[40rem] w-full bg-cover bg-center py-16 mr-[4rem] ml-[rem] rounded-3xl relative grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4"
+  style="background-image: url('./img/header-bg.jpg');"
+>
+  <!-- Text Content -->
+  <div class="flex flex-col justify-center space-y-6 px-4 mx-auto text-center sm:text-center lg:text-left h-full">
     <p class="uppercase text-sm tracking-wider">Elevate your travel journey</p>
-    <h2 class="text-4xl md:text-5xl font-extrabold">
-      Experience <br />The Magic Of <span class="text-blue-600">Flight!</span>
+    <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
+      Experience <br />
+      The Magic Of <span class="text-blue-600">Flight!</span>
     </h2>
 
+    <!-- Buttons -->
     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
       <a
         href="#"
         class="px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
-        >Book A Trip Now</a
       >
+        Book A Trip Now
+      </a>
       <button
         class="w-12 h-12 rounded-full border-2 border-none flex items-center justify-center bg-white hover:bg-blue-50 transition"
       >
-        <i class="fa-solid fa-circle-play" style="color: #3584e4;"></i>
+        <i class="fa-solid fa-circle-play text-blue-500 text-xl sm:text-center"></i>
       </button>
     </div>
   </div>
 
-        <div class="px-4">
-          <img src="img/header.png" alt="an areoplane flying" />
-        </div>
-      </div>
-    </section>
+  <!-- Image -->
+  <div class="flex items-center justify-center px-4 h-full">
+    <img src="img/header.png" alt="an airplane flying" class="w-full h-auto object-contain" />
+  </div>
+</section>
+
 
     <!--destination section-->
-   <section class="mt-[12rem] mr-[10rem] ml-[10rem] mb-[15rem] px-4 sm:px-6 lg:px-20" id="about">
+   <section class="mt-[12rem] mr-[10rem] ml-[10rem] mb-[15rem] px-4 sm:px-6 lg:px-20" id="about" >
   <h2 class="text-center text-2xl sm:text-3xl font-bold">Popular Destination</h2>
   <p class="text-center text-gray-600 text-sm sm:text-base">
     Discover the Most Loved Destinations Around the Globe
@@ -116,7 +98,7 @@
 
   <div class="grid gap-y-8 gap-x-4 mt-16 sm:grid-cols-2 lg:grid-cols-3">
     <!-- Destination Card 1 -->
-    <div class="cursor-pointer group">
+    <div class="cursor-pointer group" data-aos="fade-up" data-aos-delay="0" data-aos-duration="600">
       <img src="img/destination-1.jpg" alt="destination"
            class="rounded-2xl max-w-3/4 shadow-xl/20 transition-transform duration-300 ease-in-out group-hover:scale-105" />
       <div class="flex items-center max-w-3/4 justify-between gap-4 p-4">
@@ -131,7 +113,7 @@
     </div>
 
     <!-- Destination Card 2 -->
-    <div class="cursor-pointer group">
+    <div class="cursor-pointer group" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
       <img src="img/destination-2.jpg" alt="destination"
            class="rounded-2xl max-w-3/4 shadow-xl/20 transition-transform duration-300 ease-in-out group-hover:scale-105" />
       <div class="flex items-center max-w-3/4 justify-between gap-4 p-4">
@@ -146,7 +128,7 @@
     </div>
 
     <!-- Destination Card 3 -->
-    <div class="cursor-pointer group  mx-auto">
+    <div class="cursor-pointer group  mx-auto" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
       <img src="img/destination-3.jpg" alt="destination"
            class="rounded-2xl max-w-3/4 shadow-xl/20 transition-transform duration-300 ease-in-out group-hover:scale-105" />
       <div class="flex items-center max-w-4/5 justify-between gap-4 p-4">
@@ -420,6 +402,7 @@ mt-[12rem] mr-[10rem] ml-[10rem] mb-[15rem] px-4 sm:px-6 lg:px-16
       src="https://kit.fontawesome.com/9be8d37f50.js"
       crossorigin="anonymous"
     ></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="script.js"></script>
   </body>
 </html>
