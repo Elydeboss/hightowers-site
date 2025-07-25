@@ -13,6 +13,7 @@
     <title>High Towers</title>
   </head>
   <body style="font-family: DM Sans, sans-serif;" class="overflow-x-hidden mr-[2rem] ml-[2rem]">
+   <div>
     <nav class="relative flex items-center justify-between mx-auto max-w-7xl p-6 bg-white z-10">
       <!-- Logo + Hamburger -->
       <div class="flex items-center justify-between w-full md:w-auto">
@@ -57,21 +58,20 @@
 
 
 
-<!-- Home Section -->
 <section
-  class="h-[40rem] w-full bg-cover bg-center py-16 rounded-3xl relative grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4 px-4 sm:px-6 lg:px-20"
+  class="min-h-screen lg:h-[40rem] w-full bg-cover bg-center py-16 rounded-3xl relative grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4 px-4 sm:px-6 lg:px-20"
   style="background-image: url('./img/header-bg.jpg');"
 >
   <!-- Text Content -->
-  <div class="flex flex-col justify-center space-y-6 px-4 mx-auto text-center sm:text-center lg:text-left h-full">
+  <div class="flex flex-col justify-center space-y-6 px-4 text-center lg:text-left h-full">
     <p class="uppercase text-sm tracking-wider">Elevate your travel journey</p>
-    <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
+    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
       Experience <br />
       The Magic Of <span class="text-blue-600">Flight!</span>
     </h2>
 
     <!-- Buttons -->
-    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
       <a
         href="#"
         class="px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
@@ -79,35 +79,35 @@
         Book A Trip Now
       </a>
       <button
-        class="w-12 h-12 rounded-full border-2 border-none flex items-center justify-center bg-white hover:bg-blue-50 transition"
+        class="w-12 h-12 rounded-full flex items-center justify-center bg-white hover:bg-blue-50 transition"
       >
-        <i class="fa-solid fa-circle-play text-blue-500 text-xl sm:text-center"></i>
+        <i class="fa-solid fa-circle-play text-blue-500 text-xl"></i>
       </button>
     </div>
   </div>
 
   <!-- Image -->
   <div class="flex items-center justify-center px-4 h-full">
-    <img src="img/header.png" alt="an airplane flying" class="w-full h-auto object-contain" />
+    <img src="img/header.png" alt="an airplane flying" class="w-full h-auto max-w-md object-contain" />
   </div>
 </section>
 
 
-    <!--destination section-->
-   <section class="mt-[12rem] mb-[15rem] px-4 sm:px-6 lg:px-20" id="about" >
+<!--destination section-->
+  <section class="mt-48 mb-60 px-4 sm:px-6 lg:px-20" id="about">
   <h2 class="text-center text-2xl sm:text-3xl font-bold">Popular Destination</h2>
-  <p class="text-center text-gray-600 text-sm sm:text-base">
+  <p class="text-center text-gray-600 text-sm sm:text-base mt-2">
     Discover the Most Loved Destinations Around the Globe
   </p>
 
-  <div class="grid gap-y-8 gap-x-4 mt-16 sm:grid-cols-2 lg:grid-cols-3">
-    <!-- Destination Card 1 -->
+  <div class="grid gap-8 mt-16 sm:grid-cols-2 lg:grid-cols-3">
+    <!-- Reusable Card Component -->
     <div class="cursor-pointer group" data-aos="fade-up" data-aos-delay="0" data-aos-duration="600">
       <img src="img/destination-1.jpg" alt="destination"
-           class="rounded-2xl max-w-3/4 shadow-xl/20 transition-transform duration-300 ease-in-out group-hover:scale-105" />
-      <div class="flex items-center max-w-3/4 justify-between gap-4 p-4">
+           class="w-full rounded-2xl shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105" />
+      <div class="flex items-center justify-between gap-4 p-4">
         <div>
-          <h4 class="text-base font-semibold font-semibold mb-1 text-gray-800">Tradition and Futurism</h4>
+          <h4 class="text-base font-semibold mb-1 text-gray-800">Tradition and Futurism</h4>
           <p class="text-sm sm:text-base text-gray-500">New York City, USA</p>
         </div>
         <div class="flex text-sm text-white bg-blue-600 group-hover:bg-blue-700 px-3 py-1 rounded-full transition-colors duration-300">
@@ -116,13 +116,12 @@
       </div>
     </div>
 
-    <!-- Destination Card 2 -->
     <div class="cursor-pointer group" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
       <img src="img/destination-2.jpg" alt="destination"
-           class="rounded-2xl max-w-3/4 shadow-xl/20 transition-transform duration-300 ease-in-out group-hover:scale-105" />
-      <div class="flex items-center max-w-3/4 justify-between gap-4 p-4">
+           class="w-full rounded-2xl shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105" />
+      <div class="flex items-center justify-between gap-4 p-4">
         <div>
-          <h4 class="text-base font-semibold font-semibold mb-1 text-gray-800">The City of Lights</h4>
+          <h4 class="text-base font-semibold mb-1 text-gray-800">The City of Lights</h4>
           <p class="text-sm sm:text-base text-gray-500">Paris, France</p>
         </div>
         <div class="flex text-sm text-white bg-blue-600 group-hover:bg-blue-700 px-3 py-1 rounded-full transition-colors duration-300">
@@ -131,26 +130,25 @@
       </div>
     </div>
 
-    <!-- Destination Card 3 -->
-    <div class="cursor-pointer group  mx-auto" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+    <div class="cursor-pointer group" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
       <img src="img/destination-3.jpg" alt="destination"
-           class="rounded-2xl max-w-3/4 shadow-xl/20 transition-transform duration-300 ease-in-out group-hover:scale-105" />
-      <div class="flex items-center max-w-4/5 justify-between gap-4 p-4">
+           class="w-full rounded-2xl shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105" />
+      <div class="flex items-center justify-between gap-4 p-4">
         <div>
-          <h4 class="text-base font-semibold font-semibold mb-1 text-gray-800">Island of the Gods</h4>
+          <h4 class="text-base font-semibold mb-1 text-gray-800">Island of the Gods</h4>
           <p class="text-sm sm:text-base text-gray-500">Bali, Indonesia</p>
         </div>
-        <div class="flex text-white bg-blue-600 group-hover:bg-blue-700 px-3 py-1 rounded-full transition-colors duration-300">
+        <div class="flex text-sm text-white bg-blue-600 group-hover:bg-blue-700 px-3 py-1 rounded-full transition-colors duration-300">
           <span class="pr-2"><i class="ri-star-fill"></i></span> 4.8
         </div>
       </div>
     </div>
   </div>
 </section>
-<!--end of destination section-->
+
 
 <!--journey section-->
-<section class="mt-[12rem] mb-[15rem] px-4 sm:px-6 lg:px-20">
+<section class="mt-[8rem] mb-[15rem] px-4 sm:px-6 lg:px-20">
   <h1>Journey To The sky Made Simple!</h1>
   <h4>Effortless Planning for Your Next Adventure</h4>
 
@@ -246,18 +244,23 @@
 <!--end of wanderlust section-->
 
 <!--card ratings section-->
-<section class="mt-[8rem] mb-[15rem] px-4 sm:px-6 lg:px-20">
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-12 w-full h-64 mt-8 mb-12">
-    <div class="bg-[#f5f5f4] text-center p-12 rounded-3xl shadow-xl/20">
-      <h1 class="text-4xl font-bold ">10+</h1>
+<section class="mt-32 mb-60 px-4 sm:px-6 lg:px-20">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 mb-12">
+    <!-- Card 1 -->
+    <div class="bg-[#f5f5f4] text-center px-6 py-10 sm:px-8 sm:py-12 rounded-3xl shadow-md">
+      <h1 class="text-3xl sm:text-4xl font-bold">10+</h1>
       <p class="text-sm text-gray-400 mt-4">Years Experience</p>
     </div>
-    <div class="bg-[#f5f5f4] text-center p-12 rounded-3xl shadow-xl/20">
-      <h1 class="text-4xl font-bold">12k</h1>
+
+    <!-- Card 2 -->
+    <div class="bg-[#f5f5f4] text-center px-6 py-10 sm:px-8 sm:py-12 rounded-3xl shadow-md">
+      <h1 class="text-3xl sm:text-4xl font-bold">12k</h1>
       <p class="text-sm text-gray-400 mt-4">Happy Clients</p>
     </div>
-    <div class="bg-[#f5f5f4] text-center p-12 rounded-3xl shadow-xl/20">
-      <h1 class="text-4xl font-bold">4.8</h1>
+
+    <!-- Card 3 -->
+    <div class="bg-[#f5f5f4] text-center px-6 py-10 sm:px-8 sm:py-12 rounded-3xl shadow-md">
+      <h1 class="text-3xl sm:text-4xl font-bold">4.8</h1>
       <p class="text-sm text-gray-400 mt-4">Overall Ratings</p>
     </div>
   </div>
@@ -265,141 +268,208 @@
 <!--end of card rating section-->
 
 <!--Discover section-->
-<section class="mt-[12rem] mr-[10rem] ml-[10rem] mb-[15rem] px-4 sm:px-6 lg:px-20">
-  <h2 class="text-3xl font-bold mb-4 ml-[1rem]">Discover The World From Above</h2>
-  <p class="mb-2 ml-[1rem]">
+<section class="mt-20 mb-24 px-4 sm:px-6 lg:px-20">
+  <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-center">
+    Discover The World From Above
+  </h2>
+
+  <p class="text-base sm:text-lg text-center text-gray-600 mb-8">
     Experience Breathtaking Views and Unique Perspectives
   </p>
 
-  <div class="max-w-full h-full mx-auto px-4 ">
-    <div class="grid gap-8 mt-16 sm:grid-cols-2 lg:grid-cols-3">
-    <!-- Card 1 -->
-    <div class="p-8 text-center transition-shadow duration-300 border border-dotted border-blue-500 rounded-xl hover:shadow-xl">
-      <span class="inline-block mb-4 p-3 text-2xl text-blue-500 bg-blue-100 rounded-full">
-        <i class="ri-camera-lens-line"></i>
-      </span>
-      <h4 class="text-xl font-bold text-gray-800 mb-3 mx-auto max-w-[150px]">Aerial Cityscapes</h4>
-      <p class="text-gray-600">
-        Witness the architectural marvels and bustling streets from bird's-eye view, offering a unique perspective.
-      </p>
-    </div>
+  <div class="max-w-7xl mx-auto">
+    <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Card 1 -->
+      <div class="p-6 text-center border border-dotted border-blue-500 rounded-xl transition-shadow duration-300 hover:shadow-xl">
+        <span class="inline-block mb-4 p-3 text-2xl text-blue-500 bg-blue-100 rounded-full">
+          <i class="ri-camera-lens-line"></i>
+        </span>
+        <h4 class="text-lg font-bold text-gray-800 mb-3">Aerial Cityscapes</h4>
+        <p class="text-gray-600">
+          Witness the architectural marvels and bustling streets from bird's-eye view, offering a unique perspective.
+        </p>
+      </div>
 
-    <!-- Card 2 -->
-    <div class="p-8 text-center transition-shadow duration-300 border border-dotted border-blue-500 rounded-xl hover:shadow-xl">
-      <span class="inline-block mb-4 p-3 text-2xl text-blue-500 bg-blue-100 rounded-full">
-        <i class="ri-ship-line"></i>
-      </span>
-      <h4 class="text-xl font-bold text-gray-800 mb-3 mx-auto max-w-[150px]">Coastal Wonders</h4>
-      <p class="text-gray-600">
-        Fly over pristine coastlines and turquoise waters, revealing hidden coves and vibrant coral reefs.
-      </p>
-    </div>
+      <!-- Card 2 -->
+      <div class="p-6 text-center border border-dotted border-blue-500 rounded-xl transition-shadow duration-300 hover:shadow-xl">
+        <span class="inline-block mb-4 p-3 text-2xl text-blue-500 bg-blue-100 rounded-full">
+          <i class="ri-ship-line"></i>
+        </span>
+        <h4 class="text-lg font-bold text-gray-800 mb-3">Coastal Wonders</h4>
+        <p class="text-gray-600">
+          Fly over pristine coastlines and turquoise waters, revealing hidden coves and vibrant coral reefs.
+        </p>
+      </div>
 
-    <!-- Card 3 -->
-    <div class="p-8 text-center transition-shadow duration-300 border border-dotted border-blue-500 rounded-xl hover:shadow-xl">
-      <span class="inline-block mb-4 p-3 text-2xl text-blue-500 bg-blue-100 rounded-full">
-        <i class="ri-landscape-line"></i>
-      </span>
-      <h4 class="text-xl font-bold text-gray-800 mb-3 mx-auto max-w-[150px]">Historic Landmarks</h4>
-      <p class="text-gray-600">
-        Observe the grandeur of ancient castles and other significant sites in a way that ground tours can't offer.
-      </p>
+      <!-- Card 3 -->
+      <div class="p-6 text-center border border-dotted border-blue-500 rounded-xl transition-shadow duration-300 hover:shadow-xl">
+        <span class="inline-block mb-4 p-3 text-2xl text-blue-500 bg-blue-100 rounded-full">
+          <i class="ri-landscape-line"></i>
+        </span>
+        <h4 class="text-lg font-bold text-gray-800 mb-3">Historic Landmarks</h4>
+        <p class="text-gray-600">
+          Observe the grandeur of ancient castles and other significant sites in a way that ground tours can't offer.
+        </p>
+      </div>
+
     </div>
   </div>
-  </div>
-  
 </section>
+
 <!--end of discover section-->
+
 <!--section for clients page-->
 <section class="mt-[12rem] mb-[15rem] px-4 sm:px-6 lg:px-20">
-  <h2 class="text-3xl font-bold mr-8s mb-4">Loved By Over Thousand Travelers</h2>
-  <p class="mr-8s text-gray-600 mb-10">
+  <h2 class="text-3xl font-bold mb-4">Loved By Over Thousand Travelers</h2>
+  <p class="text-gray-600 mb-10">
     Discover the stories of wanderlust and cherished memories through the eyes of our valued clients.
   </p>
 
-  <!-- Swiper main container -->
-  <div class="">
-    <!-- Wrapper -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
-
-      <!-- Slide -->
-      <div class="max-w-full">
-        <div class="p-[5px] rounded-xl bg-gray-100 hover:bg-blue-500 transition-colors duration-300">
-          <div class="p-4 rounded-[calc(1rem-5px)] bg-white">
-            <div class="mb-4 text-blue-500 flex justify-center gap-1">
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
+  <!-- Client Testimonials -->
+  <section class="px-4 py-8">
+  <div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="w-full">
+        <div class="p-4 rounded-xl bg-gray-100 hover:bg-blue-500 transition duration-300 h-full">
+          <div class="p-4 rounded-xl bg-white">
+            <div class="mb-3 text-blue-500 flex justify-center gap-1 text-sm">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
             </div>
-            <p class="text-gray-800">
-              My recent adventure with Skywings was nothing short of spectacular. The personalized itineraries and recommendations they provided led me to extraordinary locations that I would never have found on my own. I'm already planning my next adventure with them!
+            <p class="text-gray-800 text-sm leading-relaxed">
+              Skywings has completely transformed my travel experience. From finding hidden gems in bustling cities to discovering serene retreats off the beaten path, every detail was thoughtfully arranged. I can't recommend Skywings enough!
             </p>
           </div>
           <div class="flex items-center gap-4 p-4">
-            <img src="/img/client-1.jpg" alt="client" class="w-[50px] h-[50px] rounded-full object-cover" />
+            <img src="img/client-1.jpg" alt="client" class="w-[45px] h-[45px] rounded-full object-cover" />
             <div>
-              <h4 class="text-base font-semibold font-semibold text-gray-800 group-hover:text-white transition-colors duration-300">John Adams</h4>
-              <h5 class="text-base font-medium text-gray-400 group-hover:text-gray-100 transition-colors duration-300">Travel Blogger</h5>
+              <h4 class="text-sm font-semibold text-gray-800">John Adams</h4>
+              <h5 class="text-sm text-gray-400">Travel Blogger</h5>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Repeat for each slide -->
-      <div class="swiper-slide">
-        <div class="p-[5px] rounded-xl bg-gray-100 hover:bg-blue-500 transition-colors duration-300">
-          <div class="p-4 rounded-[calc(1rem-5px)] bg-white">
-            <div class="mb-4 text-blue-500 flex justify-center gap-1">
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
+      <!-- Card 2 -->
+      <div class="w-full">
+        <div class="p-4 rounded-xl bg-gray-100 hover:bg-blue-500 transition duration-300 h-full">
+          <div class="p-4 rounded-xl bg-white">
+            <div class="mb-3 text-blue-500 flex justify-center gap-1 text-sm">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
             </div>
-            <p class="text-gray-800">
-              Finding a balance between work and travel can be challenging, but Skywings made it effortless. Their efficient planning and excellent recommendations helped me maximize my downtime and enjoy every moment of my trip. I look forward to working with them again on future travels.
+            <p class="text-gray-800 text-sm leading-relaxed">
+              Skywings made it effortless to find balance between work and travel.
             </p>
           </div>
           <div class="flex items-center gap-4 p-4">
-            <img src="/img/client-2.jpg" alt="client" class="w-[50px] h-[50px] rounded-full object-cover" />
+            <img src="img/client-2.jpg" alt="client" class="w-[45px] h-[45px] rounded-full object-cover" />
             <div>
-              <h4 class="text-base font-semibold font-semibold text-gray-800 group-hover:text-white transition-colors duration-300">Emily Thompson</h4>
-              <h5 class="text-base font-medium text-gray-400 group-hover:text-gray-100 transition-colors duration-300">Adventure Enthusiast</h5>
+              <h4 class="text-sm font-semibold text-gray-800">Emily Thompson</h4>
+              <h5 class="text-sm text-gray-400">Adventure Enthusiast</h5>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- upcoming slide -->
-      <div class="">
-        <div class="p-[5px] rounded-xl bg-gray-100 hover:bg-blue-500 transition-colors duration-300">
-          <div class="p-4 rounded-[calc(1rem-5px)] bg-white">
-            <div class="mb-4 text-blue-500 flex justify-center gap-1">
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
-              <span><i class="ri-star-fill"></i></span>
+      <!-- Card 3 -->
+      <div class="w-full">
+        <div class="p-4 rounded-xl bg-gray-100 hover:bg-blue-500 transition duration-300 h-full">
+          <div class="p-4 rounded-xl bg-white">
+            <div class="mb-3 text-blue-500 flex justify-center gap-1 text-sm">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
             </div>
-            <p class="text-gray-800 text-sm whitespace-wrap">
-              Skywings offered a transformative experience for my research into historical landmarks. The unique aerial perspectives provided a new level of appreciation and insight into the sites I studied. I highly recommend their services to fellow historians and cultural enthusiasts.
+            <p class="text-gray-800 text-sm leading-relaxed">
+              A transformative experience for my research into historic landmarks.
             </p>
           </div>
           <div class="flex items-center gap-4 p-4">
-            <img src="/img/client-3.jpg" alt="client" class="w-[50px] h-[50px] rounded-full object-cover" />
+            <img src="img/client-3.jpg" alt="client" class="w-[45px] h-[45px] rounded-full object-cover" />
             <div>
-              <h4 class="text-base font-semibold font-semibold text-gray-800 group-hover:text-white transition-colors duration-300">Emily Thompson</h4>
-              <h5 class="text-base font-medium text-gray-400 group-hover:text-gray-100 transition-colors duration-300">Adventure Enthusiast</h5>
+              <h4 class="text-sm font-semibold text-gray-800">Carlos D.</h4>
+              <h5 class="text-sm text-gray-400">Cultural Historian</h5>
             </div>
           </div>
         </div>
+      </div>
 
     </div>
   </div>
 </section>
+</div>
 <!-- End of clients section -->
+
+<!-- Footer FULL WIDTH -->
+<div class="w-screen relative left-1/2 -translate-x-1/2 bg-gray-900 text-white px-6 py-8">
+  <footer class="max-w-7xl mx-auto">
+    <!-- Footer content here -->
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-gray-300 px-6 py-10 bg-gray-900">
+  <!-- Logo and Description -->
+  <div>
+    <a href="#" class="text-2xl font-bold text-white mb-4 block">HighTowers</a>
+    <p class="text-sm leading-relaxed">
+      Explore the world with ease and excitement through our comprehensive travel platform. Your journey begins here, where seamless planning meets unforgettable experiences.
+    </p>
+    <ul class="flex items-center gap-4 mt-4 text-lg">
+      <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+      <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+      <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+    </ul>
+  </div>
+
+  <!-- Quick Links -->
+  <div>
+    <h4 class="text-white text-lg font-semibold mb-4">Quick Links</h4>
+    <ul class="space-y-2 text-sm">
+      <li><a href="#" class="hover:underline">Home</a></li>
+      <li><a href="#" class="hover:underline">Flights</a></li>
+      <li><a href="#" class="hover:underline">Hotels</a></li>
+      <li><a href="#" class="hover:underline">Cruise</a></li>
+    </ul>
+  </div>
+
+  <!-- Contact Us -->
+  <div>
+    <h4 class="text-white text-lg font-semibold mb-4">Contact Us</h4>
+    <ul class="space-y-2 text-sm">
+      <li>
+        <a href="#" class="flex items-center gap-2">
+          <i class="ri-phone-fill"></i> +91 9876543210
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center gap-2">
+          <i class="ri-record-mail-line"></i> info@highTowers
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center gap-2">
+          <i class="ri-map-pin-2-fill"></i> Lagos, Nigeria
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Subscribe -->
+  <div>
+    <h4 class="text-white text-lg font-semibold mb-4">Subscribe</h4>
+    <form action="/" class="flex flex-col gap-4">
+      <input type="text" placeholder="Enter your email" class="px-4 py-2 rounded-md text-gray-900 focus:outline-none" />
+      <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+<!-- Footer Bar -->
+<div class="bg-gray-800 text-center text-sm text-gray-400 py-4">
+  © 2024 Emmanuel Nmaju. All rights reserved.
+</div>
+
+  </footer>
+</div>
+
+
 
     <script
       src="https://kit.fontawesome.com/9be8d37f50.js"
